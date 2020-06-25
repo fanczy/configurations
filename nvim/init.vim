@@ -21,6 +21,7 @@ set relativenumber
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set colorcolumn=100
 
 set splitright
 set splitbelow
