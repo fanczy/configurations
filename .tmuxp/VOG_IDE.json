@@ -1,0 +1,36 @@
+{
+    "session_name": "VOG_IDE",
+    "windows": [
+        {
+            "window_name": "IDE",
+            "layout": "fd4e,238x66,0,0[238x54,0,0,21,238x11,0,55{59x11,0,55,22,59x11,60,55,25,59x11,120,55,23,58x11,180,55,24}]",
+            "focus": "true",
+            "start_directory": "~/repository/voiceguard-client-spa",
+            "panes": [
+                {
+                    "shell_command": "vi"
+                },
+                {
+                    "shell_command": [
+                        "nohup ~/dev/firefox/firefox --new-tab http://localhost:3000 >/dev/null 2>&1 &",
+                        "clear",
+                        "git pull"
+                    ],
+                    "focus": "true"
+                },
+                {
+                    "shell_command": "yarn run start"
+                },
+                {
+                    "shell_command": "yarn run test"
+                },
+                {
+                    "shell_command": [
+                        "cd ~/repository/voiceguard-json-server/client-server",
+                        "yarn start"
+                    ]
+                }
+            ]
+        }
+    ]
+}
